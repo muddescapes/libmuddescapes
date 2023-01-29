@@ -6,6 +6,13 @@
     "type": "git",
     "url": "https://github.com/muddescapes/libmuddescapes.git"
   },
+  "examples": [
+    {
+      "name": "led",
+      "base": "examples/led",
+      "files": ["main.cpp"]
+    }
+  ],
   "authors": [
     {
       "name": "Kevin Wu",
