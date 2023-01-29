@@ -1,0 +1,21 @@
+{
+  "name": "libmuddescapes",
+  "version": "1.0.0",
+  "description": "MuddEscapes use - Library used to update the MuddEscapes control center",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muddescapes/libmuddescapes.git"
+  },
+  "authors": [
+    {
+      "name": "Kevin Wu",
+      "email": "kevin@kevinniuwu.com",
+      "url": "https://kevinniuwu.com",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/muddescapes/libmuddescapes",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
