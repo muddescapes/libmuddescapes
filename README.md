@@ -67,12 +67,14 @@ Variables are values that are shown on the control center. To add a variable, mo
 array to include the name of the variable and a reference to the variable itself.
 
 ```cpp
-int led_state = 0;
+bool led_state = false;
 // ...
 muddescapes_variable variables[]{{"LED State", &led_state}, {NULL, NULL}};
 ```
 
 Ensure the entry containing NULLs is at the end of the array.
+
+__NOTE: only boolean variables are supported.__
 
 ### Examples
 
