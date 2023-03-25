@@ -1,6 +1,6 @@
 {
   "name": "libmuddescapes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MuddEscapes use - Library used to update the MuddEscapes control center",
   "repository": {
     "type": "git",

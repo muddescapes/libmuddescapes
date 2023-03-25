@@ -76,6 +76,15 @@ Ensure the entry containing NULLs is at the end of the array.
 
 __NOTE: only boolean variables are supported.__
 
+### Calling other callbacks
+
+To call functions on other ESPs, use the `call_remote_fn` function. It takes the name of the ESP
+as the first argument, and the name of the callback as the second argument.
+
+```cpp
+me.call_remote_fn("esp1", "Turn on LED");
+```
+
 ### Examples
 
 See the [MuddEscapes template](https://github.com/muddescapes/template) for a full example of how to use

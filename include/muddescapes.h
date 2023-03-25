@@ -44,7 +44,10 @@ class MuddEscapes {
 
     void init(const char *ssid, const char *pw, const char *broker, const char *name, muddescapes_callback callbacks[], muddescapes_variable variables[]);
     void update();
+    void call_remote_fn(const char *puzzle, const char *fn);
 
+    // these are public so we can make a wrapper function for them
+    // so that they can be accessed without a pointer to the class
     void mqtt_cb_connected(esp_mqtt_event_handle_t event);
     void mqtt_cb_subscribed(esp_mqtt_event_handle_t event);
     void mqtt_cb_published(esp_mqtt_event_handle_t event);

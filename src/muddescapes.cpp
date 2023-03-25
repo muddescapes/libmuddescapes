@@ -139,3 +139,10 @@ void MuddEscapes::update() {
         update_var(&variables[i]);
     }
 }
+
+void MuddEscapes::call_remote_fn(const char *puzzle, const char *fn) {
+    String topic = CONTROL_TOPIC_PREFIX + "/" + puzzle;
+    String message = fn;
+    ESP_LOGI(TAG, "calling remote function %s on puzzle %s", fn, puzzle);
+    esp_mqtt_client_enqueue(client, topic.c_str(), message.c_str(), message.length(), 2, 0, true);
+}
